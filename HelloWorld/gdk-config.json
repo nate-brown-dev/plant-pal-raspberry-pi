@@ -1,0 +1,16 @@
+{
+  "component": {
+    "com.example.PythonHelloWorld": {
+      "author": "clueless-caterpillars",
+      "version": "NEXT_PATCH",
+      "build": {
+        "build_system": "zip"
+      },
+      "publish": {
+        "bucket": "greengrass-component-artifact-995e",
+        "region": "us-east-1"
+      }
+    }
+  },
+  "gdk_version": "1.0.0"
+}
