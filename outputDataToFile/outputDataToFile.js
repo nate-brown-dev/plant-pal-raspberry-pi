@@ -6,7 +6,8 @@ async function plantData() {
 
   let plantData = {
       soilMoisture: null,
-      weather: {},
+      humidity: null,
+      temperature: null,
       timeStamp: Date.now(),
   }
 
@@ -28,7 +29,10 @@ async function plantData() {
     await getWeatherData() 
     let weather = await fs.readFile('/home/pi/pi-node/weather.json', 'utf-8')
     console.log('WEATHER, ', weather)
-    plantData['weather'] = JSON.parse(weather)
+    let weatherData = JSON.parse(weather)
+    plantData['temperature'] = weatherData['temperature'];
+    plantData['humidity'] = weatherData['humidity']
+
 
   console.log('FINAL PLANT DATA', plantData)
   return plantData;
@@ -37,12 +41,12 @@ async function plantData() {
 
 /*
 The function above must be called like below:
+*/
 
 // const result = async () => {
-//   let data = await plantData()
-//   console.log(data)
+//   await plantData()
 // }
 // result()
-*/
+
 
 module.exports = plantData;
