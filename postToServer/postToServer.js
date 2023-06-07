@@ -21,10 +21,10 @@ async function postToServer(name='plant') {
     return result.data;
   }
   catch(e) {
-    console.error(e)
+    console.error('POST TO SERVER ERROR', e)
   }
 
 }
 
-postToServer()
-// module.exports = postToServer;
+// postToServer()
+module.exports = postToServer;
