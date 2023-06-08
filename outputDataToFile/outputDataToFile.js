@@ -11,20 +11,10 @@ async function plantData() {
       timeStamp: Date.now(),
   }
 
-
   await readPlantStatus(4)
   let moisture = await fs.readFile('./moistureReading', 'utf-8')
   console.log('MOISTURE', moisture)
   plantData['soilMoisture']=JSON.parse(moisture);
-  // await fs.readFile('./moistureReading', 'utf-8', (err, data) => {
-  //       if (err) {
-  //         console.error(err);
-  //         return;
-  //       }
-  //       console.log('SOIL DATA', data);
-  //       plantData['soilMoisture']=data;
-  //       console.log('PLANT DATA', plantData)
-  //     })
 
     await getWeatherData() 
     let weather = await fs.readFile('/home/pi/pi-node/weather.json', 'utf-8')
