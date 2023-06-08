@@ -8,7 +8,7 @@
 #scp  pi@10.0.0.165:~/pi-node/onOff
 # ssh pi@10.0.0.165 node /home/pi/pi-node/onOff/onOff.js
 
-for dir in onOff readState soilMoisture readPlantStatus weatherData outputDataToFile postToServer
+for dir in onOff readState soilMoisture readPlantStatus weatherData outputDataToFile getSoilMoisture postToServer consumeSQS
 do
   scp -r $dir  pi@10.0.0.165:~/pi-node
 done
