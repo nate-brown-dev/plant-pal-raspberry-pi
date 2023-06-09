@@ -2,7 +2,7 @@ const readState = require('./../readState/readState')
 const { exec } = require("child_process");
 const authenticateUser = require('./../authenticateUser/authenticateUser');
 const axios = require('axios')
-require('dotenv')
+require('dotenv').config()
 const fs = require('fs')
 
 function runPythonCode(time){
