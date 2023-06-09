@@ -8,12 +8,12 @@
 #scp  pi@10.0.0.165:~/pi-node/onOff
 # ssh pi@10.0.0.165 node /home/pi/pi-node/onOff/onOff.js
 
-for dir in onOff readState soilMoisture readPlantStatus weatherData outputDataToFile getSoilMoisture postToServer consumeSQS
+for dir in onOff readState soilMoisture readPlantStatus weatherData outputDataToFile getSoilMoisture postToServer consumeSQS authenticateUser
 do
   scp -r $dir  pi@10.0.0.165:~/pi-node
 done
 
-for file in gpio-code.js gpio-code.py package.json
+for file in gpio-code.js gpio-code.py package.json .env
 do
   scp -r $file  pi@10.0.0.165:~/pi-node
 done

@@ -14,7 +14,7 @@ async function onOffSQS(time) {
     queueUrl: AWS_TOGGLEPISTATE_SQS,
   
     handleMessage: async (message) => {
-      // console.log(message);
+      console.log(message);
       try {
         let delivered = JSON.parse(message.Body);
         console.log('MESSAGE', delivered.Message);
@@ -22,8 +22,10 @@ async function onOffSQS(time) {
         console.log(`STATE, ${stateMessage['state']}`);
   
         if (stateMessage['state'] === 'on'){
-          onOff(time)
+            onOff(time)
+          .then(()=>console.log('your pi is done waetering'))
         }
+        
         else if (stateMessage['state']==='off') {
           try{
             console.log('UPDATING YOUR PLANT WATERING')
@@ -34,6 +36,7 @@ async function onOffSQS(time) {
             console.error('AFTER WATERING...', e)
           }
         }
+        
         else {
           console.log('YOUR SYSTEM IS', stateMessage['state'])
           return stateMessage;

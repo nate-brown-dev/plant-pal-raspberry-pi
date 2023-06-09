@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "amazon-cognito-identity-js": "^6.2.0",
+    "aws-sdk": "^2.1394.0",
     "axios": "^1.4.0",
+    "dotenv": "^16.1.4",
     "node-dht-sensor": "^0.4.3",
     "onoff": "^6.0.3",
     "sqs-consumer": "^5.8.0",

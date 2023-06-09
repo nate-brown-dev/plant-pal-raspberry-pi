@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
         led.on()
         sleep(delay)
-        r = requests.post('http://ec2-18-236-102-112.us-west-2.compute.amazonaws.com:3001/state?state=off')
+        # r = requests.post('http://ec2-18-236-102-112.us-west-2.compute.amazonaws.com:3001/state?state=off')
 
     except Exception as e:
         print(e)
