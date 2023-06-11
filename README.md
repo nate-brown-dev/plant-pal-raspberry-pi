@@ -12,10 +12,10 @@ The Raspberry Pi communicates with an EC2 server, which acts as a centralized hu
 
 To set up this project, you will need the following hardware components:
 
-- (Raspberry Pi (preferably Raspberry Pi 3 or newer))['https://www.raspberrypi.com/products/raspberry-pi-3-model-b/']
-- Weather station sensor (e.g., DHT11, DHT22, or BME280, we used a (DHT22 Compatible with AM2302 Temperature and Humidity Sensor Module)[''https://www.amazon.co.uk/AZDelivery-DHT22-modul-parent/dp/B07Z6JRMCW])
-- (Capacitive Soil Moisture Sensor)['https://www.amazon.com/Gikfun-Capacitive-Corrosion-Resistant-Detection/dp/B07H3P1NRM']
-- Relay Module, any relay module should work, I used (this one)['https://www.amazon.com/SunFounder-Channel-Shield-Arduino-Raspberry/dp/B00E0NSORY/ref=asc_df_B00E0NSORY/?tag=hyprod-20&linkCode=df0&hvadid=309820150211&hvpos=&hvnetw=g&hvrand=7989239664231727002&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033313&hvtargid=pla-438786682067&psc=1'], but for simplicity, a (relay-controlled power outlet)[https://www.adafruit.com/product/2935?gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqQGNsW1u9QZrBkHLJOQRrofrqzBKsTh-y0vbhe1jpZffl53WyPut5hoCDd4QAvD_BwE] would require less modification to the water pump
+- (Raspberry Pi (preferably Raspberry Pi 3 or newer))[https://www.raspberrypi.com/products/raspberry-pi-3-model-b/]
+- Weather station sensor (e.g., DHT11, DHT22, or BME280, we used a (DHT22 Compatible with AM2302 Temperature and Humidity Sensor Module)[https://www.amazon.co.uk/AZDelivery-DHT22-modul-parent/dp/B07Z6JRMCW])
+- (Capacitive Soil Moisture Sensor)[https://www.amazon.com/Gikfun-Capacitive-Corrosion-Resistant-Detection/dp/B07H3P1NRM]
+- Relay Module, any relay module should work, I used (this one)[https://www.amazon.com/SunFounder-Channel-Shield-Arduino-Raspberry/dp/B00E0NSORY/ref=asc_df_B00E0NSORY/?tag=hyprod-20&linkCode=df0&hvadid=309820150211&hvpos=&hvnetw=g&hvrand=7989239664231727002&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033313&hvtargid=pla-438786682067&psc=1], but for simplicity, a (relay-controlled power outlet)[https://www.adafruit.com/product/2935?gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqQGNsW1u9QZrBkHLJOQRrofrqzBKsTh-y0vbhe1jpZffl53WyPut5hoCDd4QAvD_BwE] would require less modification to the water pump
 - Watering system (e.g., water pump, solenoid valve, or sprinkler system)
 - Jumper wires and breadboard (for circuit connections)
 - Power supply for Raspberry Pi and other components
@@ -36,7 +36,7 @@ The software requirements for this project are as follows:
 - Python 3.x
 - Node 18.x
 - AWS SDK for Node
-- Web server (see (this repo)['https://github.com/clueless-caterpillars/state-server'])
+- Web server (see (this repo)[https://github.com/clueless-caterpillars/state-server])
 
 ## Installation
 
