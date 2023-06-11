@@ -19,7 +19,14 @@ To set up this project, you will need the following hardware components:
 - Watering system (e.g., water pump, solenoid valve, or sprinkler system)
 - Jumper wires and breadboard (for circuit connections)
 - Power supply for Raspberry Pi and other components
+- Water Pump (I used (this one)[https://www.amazon.com/gp/product/B07MDBYTLS/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1])
 - Internet connectivity (Ethernet or Wi-Fi)
+
+### Schematics - how to connect the pieces...
+
+Note that this is just a general overview of how each pieces are connected, for detailed instructure, please refer to the documentation of each hardware and the raspberry pi GPIO pinout chart. Also it's advised to use common safety practice when working with electricity, integrated circuits, and AC currents. 
+
+![Drag Racing](Dragster.jpg)
 
 ## Software Requirements
 
