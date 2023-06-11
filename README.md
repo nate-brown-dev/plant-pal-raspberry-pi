@@ -34,7 +34,7 @@ The software requirements for this project are as follows:
 
 - Raspberry Pi OS (Raspbian) or a compatible operating system
 - Python 3.x
-- Node 18.x
+- Node 12.x
 - AWS SDK for Node
 - Web server (see [this repo](https://github.com/clueless-caterpillars/state-server))
 
