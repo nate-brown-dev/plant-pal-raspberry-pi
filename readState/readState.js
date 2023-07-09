@@ -1,6 +1,7 @@
 
 const axios = require('axios')
 
+// update all AWS URLs for nate's account
 // url=http://ec2-18-236-102-112.us-west-2.compute.amazonaws.com:3001/state
 async function readState() {
   const config = {
